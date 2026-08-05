@@ -683,24 +683,63 @@ h1, h2, h3, h4, .font-display {
 }
 
 @media (max-width: 768px) {
-    .header__nav { display: none; }
-    .header__burger { display: flex; }
+    .header {
+        height: auto;
+        min-height: var(--header-h);
+        padding: 0.75rem 1rem;
+    }
+
+    .header__inner {
+        flex-wrap: wrap;
+        row-gap: 0.75rem;
+    }
+
+    .header__left {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .header__sep,
+    .header__tagline,
+    .header__status,
+    .header__clock {
+        display: none;
+    }
+
+    .header__right {
+        margin-left: auto;
+        gap: 0.6rem;
+    }
+
+    .header__nav {
+        display: none;
+        width: 100%;
+        order: 3;
+    }
+
+    .header__burger {
+        display: flex;
+        margin-left: 0.25rem;
+    }
 
     .header__nav.open {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: var(--header-h);
-        left: 0;
         width: 100%;
         background: #0A0B0E;
+        border-top: 1px solid rgba(255,255,255,0.1);
         border-bottom: 2px solid var(--safety);
+        margin-top: 0.25rem;
     }
 
     .header__nav.open a {
-        padding: 1rem 2rem;
+        padding: 0.9rem 1rem;
         border-right: none;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .header__nav.open a:last-child {
+        border-bottom: none;
     }
 
     .process-grid { grid-template-columns: 1fr; }
