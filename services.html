@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — DMT Tech Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        :root { --base: #FFFFFF; --ink: #0A0B0E; --safety: #FF3E00; --surface: #F5F5F0; --card-bg: #FFFFFF; --border: 4px solid var(--ink); --shadow: 8px 8px 0px var(--ink); }
+        [data-theme="dark"] { --base: #0E1015; --ink: #F0F2F5; --surface: #161920; --card-bg: #161920; --shadow: 8px 8px 0px #000000; }
+        body { font-family: 'JetBrains Mono', monospace; background: var(--base); color: var(--ink); margin: 0; padding: 0; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; text-transform: uppercase; }
+        .container { max-width: 1440px; margin: 0 auto; padding: 4rem 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .card { border: var(--border); background: var(--card-bg); padding: 2rem; box-shadow: var(--shadow); }
+        .tag { display: inline-block; font-size: 0.65rem; padding: 0.3em 0.7em; border: 2px solid var(--ink); background: var(--safety); color: #FFF; font-weight: bold; }
+    </style>
+</head>
+<body>
+  <!-- ====== HEADER ====== -->
+<header class="header">
+    <div class="header__inner">
+        <div class="header__left">
+            <a href="index.html" class="header__logo">
+                <img src="logo_small.png">
+            </a>
+            <span class="header__sep"></span>
+            <span class="header__tagline">SME Systems</span>
+        </div>
+        <nav class="header__nav" id="headerNav">
+            <a href="services.html">Services</a>
+            <a href="manifesto.html">Manifesto</a>
+            <a href="process.html">How We Work</a>
+            <a href="engagement.html">Engagement</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header__right">
+            <!-- Theme Switcher Button -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+                <!-- Sun Icon -->
+                <svg id="sunIcon" style="display:none;" viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+                <!-- Moon Icon -->
+                <svg id="moonIcon" viewBox="0 0 24 24"><path d="M12.3 2c.43 0 .77.35.73.78-.34 4.09 2.76 7.6 6.87 7.6.34 0 .68-.03 1.02-.08.43-.06.8.27.8.7 0 5.25-4.25 9.5-9.5 9.5-5.25 0-9.5-4.25-9.5-9.5 0-4.88 3.67-8.9 8.58-9.42.34-.04.67.14.8.42z"/></svg>
+            </button>
+            <div class="header__status"><span class="header__status-dot"></span><span>Available for Q3/Q4</span></div>
+            <div class="header__clock" id="sastClock">--:--:-- SAST</div>
+        </div>
+        <button class="header__burger" id="headerBurger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+    <div class="container">
+        <span class="tag">DEEP DIVE // 01</span>
+        <h1>Engineering Capabilities</h1>
+        <p>Software engineered around South African SME operational realities.</p>
+
+        <div class="grid" style="margin-top: 3rem;">
+            <!-- Service 1 -->
+            <div class="card">
+                <h2>1. Web Presence & Digital Storefronts</h2>
+                <p>Fast-loading, SEO-optimized web applications designed to build trust and capture high-intent local traffic.</p>
+                <ul>
+                    <li>Custom Next.js / HTML5 Architecture</li>
+                    <li>Local SEO & Google Business Optimization</li>
+                    <li>Self-Hosted CMS Solutions</li>
+                </ul>
+            </div>
+            <!-- Service 2 -->
+            <div class="card">
+                <h2>2. Custom Cloud & Internal Tools</h2>
+                <p>Tailor-made software to automate workflow bottlenecks, customer management, and data reporting.</p>
+                <ul>
+                    <li>Bespoke ERP & CRM Dashboards</li>
+                    <li>Automated Booking & Scheduling Engines</li>
+                    <li>Cloud Database Architecture (PostgreSQL / AWS)</li>
+                </ul>
+            </div>
+            <!-- Service 3 -->
+            <div class="card">
+                <h2>3. Smart POS & Retail Tech</h2>
+                <p>Robust point-of-sale setups integrated with inventory databases and payment gateways built for SA conditions.</p>
+                <ul>
+                    <li>Inventory Syncing & Low-Stock Alerts</li>
+                    <li>Yoco, SnapScan & PayFast Integrations</li>
+                    <li>Offline-First Mobile POS Hardware Setup</li>
+                </ul>
+            </div>
+            <!-- Service 4 -->
+            <div class="card">
+                <h2>4. Maintenance & Support Retainers</h2>
+                <p>Proactive care to keep systems secure, updated, compliant, and performing at enterprise speeds.</p>
+                <ul>
+                    <li>30-Day Post-Launch Warranty</li>
+                    <li>POPIA Compliance Monitoring</li>
+                    <li>Monthly Database Backups & Security Patches</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== FOOTER ====== -->
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <h2 class="footer__brand-title">DMT TECH SOLUTIONS<span class="accent">.</span></h2>
+                <p class="footer__brand-text">
+                    Custom software, enterprise-grade web tools, and cloud platforms engineered for South African small and medium enterprises.
+                </p>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Founders</div>
+                <p>Linamandla Thutha</p>
+                <p>Yanga Deliwe</p>
+                <p>Zukolwethu Mdolomba</p>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Legal & Standards</div>
+                <!-- Interactive Clickable Modal Triggers -->
+                <button class="footer__link-btn" onclick="openModal('popia')">POPIA Compliance</button>
+                <button class="footer__link-btn" onclick="openModal('fixed-scope')">Fixed-Scope Terms</button>
+                <button class="footer__link-btn" onclick="openModal('ip-ownership')">Full IP Ownership</button>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>&copy; 2026 DMT Tech Solutions. All rights reserved.</span>
+            <span>Built with Ubuntu Spirit</span>
+        </div>
+    </div>
+</footer>
+
+<!-- ====== MODAL WINDOW ====== -->
+<div class="modal-overlay" id="legalModal" onclick="closeModalOnOuter(event)">
+    <div class="modal-card">
+        <div class="modal-card__header">
+            <h3 class="modal-card__title" id="modalTitle">Policy Title</h3>
+            <button class="modal-card__close" onclick="closeModal()">✕</button>
+        </div>
+        <div class="modal-card__body" id="modalBody">
+            Policy content will load here...
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
